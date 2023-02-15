@@ -1,0 +1,173 @@
+<settings>		 
+	<category label="30020">
+		<setting label="30096" type="lsep" />
+		<setting default="false" id="githubUpdateXstream" label="30010" type="bool" />
+		<setting default="" id="xstream.branch" label="30167" type="labelenum" values="Release|Nightly" visible="eq(-1,true)" />
+		<setting type="text" label="30168" enable="eq(-1,0)" visible="eq(-2,true)" />
+		<setting type="text" label="30169" enable="eq(-2,1)" visible="eq(-3,true)" />
+		<setting type="sep" />
+		<setting label="30030" type="lsep" />		
+		<setting default="false" id="githubUpdateResolver" label="30015" type="bool" visible="eq(-1,true)" />
+		<setting default="Release" id="resolver.branch" label="30098" type="labelenum" values="Release|Nightly" visible="eq(-1,true)" />
+		<setting type="text" label="30099" enable="eq(-1,0)" visible="eq(-2,true)" />
+		<setting type="text" label="30100" enable="eq(-2,1)" visible="eq(-3,true)" />
+		<setting default="false" id="enforceUpdate" label="30102" type="bool" visible="false" />
+		<setting default="true" id="newSetting" label="newSetting" type="bool" visible="false" />
+		<setting type="sep" />
+		<setting label="30031" type="lsep" />
+		<setting default="true" id="GlobalSearchPosition" label="30011" type="bool" />
+		<setting default="true" id="SettingsFolder" label="30012" type="bool" />
+		<setting default="true" id="replacefanart" label="30019" type="bool" />
+		<setting type="sep" />
+		<setting label="30032" type="lsep" />
+		<setting default="2" id="prefLanguage" label="30002" type="enum" lvalues="30103|30104|30105" />
+		<setting default="5" id="preferedQuality" label="30013" type="enum" lvalues="30106|30107|30108|30109|30110|30111" />
+		<setting default="false" id="showAdult" label="30003" type="bool" />
+		<setting type="sep" />
+		<setting label="30034" type="lsep" />
+		<setting default="30129" id="hosterSelect" label="30005" type="labelenum" lvalues="30129|30130|30131" />
+		<setting default="100" id="maxHoster" label="30007" option="int" range="10,1,1000" type="slider" />
+		<setting default="false" enable="!eq(-2,1)" id="presortHoster" label="30009" type="bool" />
+		<setting type="sep" />
+		<setting label="30035" type="lsep" />
+		<setting default="600" id="cacheTime" label="30006" option="int" range="0,60,1800" type="slider" />
+		<setting default="10" id="requestTimeout" label="30014" option="int" range="1,1,60" type="slider" />
+	</category>
+	<!-- Kategorie Indexseiten 1 (30094) und Indexseiten 2 (30095) werden vom PluginHandler gesetzt und sind somit kein fester Bestandteil der settings.xml -->		
+	<category label="30094">
+		<setting type="lsep" label="AniWorld" />
+        <setting default="true" type="bool" id="plugin_aniworld_io" label="30050" />
+        <setting default="true" type="bool" id="global_search_aniworld_io" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="Dokus4" />
+        <setting default="true" type="bool" id="plugin_dokus4" label="30050" />
+        <setting default="false" type="bool" id="global_search_dokus4" label="30052" visible="eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="FilmPalast" />
+        <setting default="true" type="bool" id="plugin_filmpalast_to" label="30050" />
+        <setting default="true" type="bool" id="global_search_filmpalast_to" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="Flimmerstube" />
+        <setting default="true" type="bool" id="plugin_flimmerstube" label="30050" />
+        <setting default="false" type="bool" id="global_search_flimmerstube" label="30052" visible="eq(-1,false)" />
+        <setting id="flimmerstube.user" type="text" label="30083" default="" />
+        <setting id="flimmerstube.pass" type="text" option="hidden" label="30084" default="" />
+        <setting type="sep" />
+        <setting type="lsep" label="HD Filme Top" />
+        <setting default="true" type="bool" id="plugin_hdfilme_top" label="30050" />
+        <setting default="true" type="bool" id="global_search_hdfilme_top" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="KinoFox" />
+        <setting default="true" type="bool" id="plugin_kinofox" label="30050" />
+        <setting default="true" type="bool" id="global_search_kinofox" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="Kinokiste Tech" />
+        <setting default="true" type="bool" id="plugin_kinokiste_tech" label="30050" />
+        <setting default="true" type="bool" id="global_search_kinokiste_tech" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="Kinomax.me" />
+        <setting default="true" type="bool" id="plugin_kinomax" label="30050" />
+        <setting default="true" type="bool" id="global_search_kinomax" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+    </category> 
+	<category label="30095">
+		<setting type="lsep" label="KinoX" />
+        <setting default="true" type="bool" id="plugin_kinox_to" label="30050" />
+        <setting default="true" type="bool" id="global_search_kinox_to" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="KKiste" />
+        <setting default="true" type="bool" id="plugin_kkiste" label="30050" />
+        <setting default="true" type="bool" id="global_search_kkiste" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="Megakino" />
+        <setting default="true" type="bool" id="plugin_megakino" label="30050" />
+        <setting default="true" type="bool" id="global_search_megakino" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="Movie4k Click" />
+        <setting default="true" type="bool" id="plugin_movie4k_click" label="30050" />
+        <setting default="true" type="bool" id="global_search_movie4k_click" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="MovieKing" />
+        <setting default="true" type="bool" id="plugin_movieking" label="30050" />
+        <setting default="true" type="bool" id="global_search_movieking" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="NetzKino" />
+        <setting default="true" type="bool" id="plugin_netzkino" label="30050" />
+        <setting default="false" type="bool" id="global_search_netzkino" label="30052" visible="eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="SerienStream" />
+        <setting default="true" type="bool" id="plugin_serienstream_to" label="30050" />
+        <setting default="true" type="bool" id="global_search_serienstream_to" label="30052" enable="!eq(-1,false)" />
+        <setting default="s.to" enable="!eq(-2,false)" id="serienstream_to-domain" label="30051" type="labelenum" values="s.to|serienstream.to|serien.cam|190.115.18.20" />
+        <setting type="sep" />
+        <setting type="lsep" label="Streamworld" />
+        <setting default="true" type="bool" id="plugin_streamworld" label="30050" />
+        <setting default="true" type="bool" id="global_search_streamworld" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+        <setting type="lsep" label="XCine Top" />
+        <setting default="true" type="bool" id="plugin_xcine_top" label="30050" />
+        <setting default="true" type="bool" id="global_search_xcine_top" label="30052" enable="!eq(-1,false)" />
+        <setting type="sep" />
+    </category>
+    <category label="TMDB">
+		<setting type="sep" />
+		<setting label="30033" type="lsep" />
+		<setting default="false" id="TMDBMETA" label="30004" type="bool" />
+		<setting default="true" enable="!eq(-1,false)" id="metaOverwrite" label="30008" type="bool" />
+		<setting default="false" enable="!eq(-2,false)" id="advanced" label="30044" type="bool" />
+		<setting default="w342" id="poster_tmdb" label="30170" type="select" values="w92|w154|w185|w342|w500|w780|original" />
+		<setting default="w1280" id="backdrop_tmdb" label="30171" type="select" values="w300|w780|w1280|original" />
+		<setting default="de" id="tmdb_lang" label="30172" type="select" values="en|de|fr|it|nl|sv|cs|da|fi|pl|es|el|tr|uk|ru|kn|ga|hr|hu|ja|no|id|ko|pt|lv|lt|ro|sk|sl|sq|sr|th|vi|bg|fa|hy|ka|ar|af|bs|zh|cn|hi" />
+		<setting type="sep" />
+		<setting label="30080" type="lsep" />
+		<setting default="lightblue" id="Color" label="30133" type="select" values="lightblue|lightcoral|lightcyan|lightgreen|lightgrey|lightpink|lightsalmon|lightseagreen|lightskyblue|lightslategray|lightsteelblue|lightyellow|aliceblue|coral|lavender|lemonchiffon|moccasin|pink|plum|powderblue|seashell" />
+	</category>
+    <category label="30022">
+		<setting default="false" id="auto-view" label="30060" type="bool" />
+		<setting type="sep" />
+		<setting default="55" enable="!eq(-2,false)" id="files-view" label="30061" type="number" />
+		<setting default="503" enable="!eq(-3,false)" id="movies-view" label="30062" type="number" />
+		<setting default="503" enable="!eq(-4,false)" id="tvshows-view" label="30063" type="number" />
+		<setting default="504" enable="!eq(-5,false)" id="seasons-view" label="30064" type="number" />
+		<setting default="504" enable="!eq(-6,false)" id="episodes-view" label="30065" type="number" />
+	</category>
+	<category label="30023">
+		<setting default="" id="download-folder" label="30081" type="folder" />
+		<setting default="false" id="backgrounddownload" label="30132" type="bool" />
+		<setting label="30070" type="sep" />
+		<setting default="false" id="jd_enabled" label="30071" type="bool" />
+		<setting default="127.0.0.1" enable="!eq(-1,false)" id="jd_host" label="30072" type="text" />
+		<setting default="10025" enable="!eq(-2,false)" id="jd_port" label="30073" type="number" />
+		<setting default="true" enable="!eq(-3,false)" id="jd_automatic_start" label="30074" type="bool" />
+		<setting default="false" enable="!eq(-4,false)" id="jd_grabber" label="30075" type="bool" />
+		<setting type="sep" />
+		<setting default="false" id="jd2_enabled" label="30077" type="bool" />
+		<setting default="127.0.0.1" enable="!eq(-1,false)" id="jd2_host" label="30072" type="text" />
+		<setting default="9666" enable="!eq(-2,false)" id="jd2_port" label="30073" type="number" />
+		<setting type="sep" />
+		<setting default="false" id="myjd_enabled" label="30091" type="bool" />
+		<setting default="JDownloader@Device" enable="!eq(-1,false)" id="myjd_device" label="30092" type="text" />
+		<setting default="example@example.com" enable="!eq(-2,false)" id="myjd_user" label="30083" type="text" />
+		<setting default="" enable="!eq(-3,false)" id="myjd_pass" label="30084" option="hidden" type="text" />
+		<setting type="sep" />
+		<setting default="false" id="pyload_enabled" label="30082" type="bool" />
+		<setting default="127.0.0.1" enable="!eq(-1,false)" id="pyload_host" label="30072" type="text" />
+		<setting default="8000" enable="!eq(-2,false)" id="pyload_port" label="30073" type="number" />
+		<setting default="user" enable="!eq(-3,false)" id="pyload_user" label="30083" type="text" />
+		<setting default="" enable="!eq(-4,false)" id="pyload_passwd" label="30084" option="hidden" type="text" />
+	</category> 
+    <category label="30024">
+		<setting label="AniWorld" type="lsep" />
+		<setting default="" id="aniworld.user" label="30083" type="text" />
+		<setting default="" id="aniworld.pass" label="30084" option="hidden" type="text" />
+		<setting type="sep" />
+		<setting label="Flimmerstube" type="lsep" />	
+		<setting id="flimmerstube.user" type="text" label="30083" default="" />
+		<setting id="flimmerstube.pass" type="text" option="hidden" label="30084" default="" />
+		<setting type="sep" />
+		<setting label="SerienStream" type="lsep" />
+		<setting default="" id="serienstream.user" label="30083" type="text" />
+		<setting default="" id="serienstream.pass" label="30084" option="hidden" type="text" />
+		<setting type="sep" />	
+	</category> 
+</settings>
